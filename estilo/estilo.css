@@ -28,7 +28,6 @@ h2, h4{
     text-align: center;
 }
 .fundo-marrom{
-    height: 600px;
     text-align: center;
     padding-top: 70px;
     background-color: #ffebcd 
@@ -47,8 +46,8 @@ h2, h4{
 -------------------------*/
 
 nav.navbar-transparent{
-    background: url(../img/bgtopo.png) no-repeat,
-                linear-gradient(90deg, #5b311e, #8a6554);
+    background: url(../img/bgtopo.png) no-repeat;
+    background-color: #C68B59;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link{
@@ -126,13 +125,13 @@ nav.navbar-transparent{
 }
 
 .atendimento{
-    height: 500px;
+    padding-bottom: 50px;
     text-align: center;
     background-color: #ffebcd 
 }
 .atendimento h2{
     color: #8f5d2d ;
-    padding: 30px;
+    padding-top: 30px;
     font-weight: bold;
 }
 .atendimento h4{
@@ -141,6 +140,7 @@ nav.navbar-transparent{
 
 /*Depoimentos
 -----------------------*/
+
 .depoimentos h2, h4{
     color: #8f5d2d;
 }
@@ -182,9 +182,6 @@ nav.navbar-transparent{
     padding-top: 60px;
 }
 #agendec{
-    background: url(../img/renata-nobg.png) center no-repeat;
-    background-size: 40%;
-    background-attachment:fixed; 
     background-color: #ffebcd;
     color: #af7a48;
     font-weight: bold;
@@ -230,6 +227,10 @@ footer ul li{
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+    p{
+        font-size: 1.2em;
+    }
+
     #home{
         padding-top: 20px;
         margin-top: 100px;
@@ -241,33 +242,69 @@ footer ul li{
         width: 350px;
         height: 300px;
     }
+    .atendimento h{
+       margin-left: 40px;
+    }
 }
 
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
-   
+    p{
+        font-size: 1.1em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .depoimentos{
+        padding-right: 40px;
+    }
+    .depoimentos img#img{
+        padding-top: 100px;
+        padding-right: 50px;
+        margin-top: 20px;
+        width: 450px;
+    }
+    p{
+        font-size: 1.3em;
+    }
     .painel{
         width: 350px;
-        height: 600px;
+        height: 800px;
         font-size: 0.9em;
      }
      .painel img{
          width: 300px;
          height: 250px;
      }
+     #agendec{
+        background: url(../img/renata-nobg.png) center no-repeat;
+        background-size: 70%;
+        background-attachment:fixed; 
+        background-color: #ffebcd;
+        color: #af7a48;
+        font-weight: bold;
+     }
  }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    
+    #agendec{
+        background-color: #ffebcd;
+        color: #af7a48;
+        font-weight: bold;
+     }
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-   
+    #agendec{
+        background: url(../img/renata-nobg.png) center no-repeat;
+        background-size: 40%;
+        background-attachment:fixed;
+        background-color: #ffebcd;
+        color: #af7a48;
+        font-weight: bold; 
+     }
  }
