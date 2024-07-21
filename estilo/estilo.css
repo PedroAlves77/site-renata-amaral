@@ -228,7 +228,7 @@ footer ul li{
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     p{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     #home{
@@ -267,7 +267,7 @@ footer ul li{
         width: 450px;
     }
     p{
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     .painel{
         width: 350px;
