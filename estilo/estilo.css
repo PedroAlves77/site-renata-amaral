@@ -1,222 +1,288 @@
+:root {
+    --cor-principal: #DAD7CD;
+    --cor-secundaria: #606c37;
+    --cor-reserva: #af7a48;
+    --color: #ffffff;
+    --cor-alternativa: #606C38;
+}
+
+
 /*Layout
 ----------------------*/
-html, body{
+html,
+body {
     line-height: 1.8em;
     height: 100%;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*Formatação geral
 --------------------------*/
 
-a{
-    color: white;
+a {
+    color: var(--color);
 }
-a:hover{
-    color: white;
+
+a:hover {
+    color: var(--color);
     text-decoration: none;
 }
 
-h2, h4{
+h2,
+h4 {
     font-family: 'Reboto', sans-serif;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
-.fundo-marrom{
+
+.fundo-marrom {
     text-align: center;
     padding-top: 70px;
-    background-color: #ffebcd 
+    background-color: var(--cor-secundaria);
 }
-.fundo-marrom h2{
-    color: #8f5d2d;
+
+.fundo-marrom h2 {
+    color: var(--cor-principal);
     margin-top: 0;
 }
 
-.display-4{
-    color: #8f5d2d;
+.fundo-marrom p{
+    color: var(--cor-principal);
+}
+
+.display-4 {
+    color: var(--cor-secundaria);
     font-weight: bold;
 }
 
 /*Barra de navegação
 -------------------------*/
 
-nav.navbar-transparent{
+nav.navbar-transparent {
     background: url(../img/bgtopo.png) no-repeat;
-    background-color: #ffebcd;
+    background-color: var(--cor-secundaria);
 }
 
-.navbar-light .navbar-nav .nav-item .nav-link{
+.navbar-light .navbar-nav .nav-item .nav-link {
     font-weight: bold;
-    color: #5b311e;
+    color: var(--cor-principal);
     text-transform: uppercase;
     font-size: 13px;
 }
-.navbar-light .navbar-nav .nav-item .nav-link:hover{
-    color: white;
-}
-.navbar-light .navbar-toggler{
-    color: rgba(255, 255, 255,.5);
-    border-color: white ;
-}
-/*Home
--------------------------------*/
-#home{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    background-color: #ffebcd;
-    color: rgb(92, 92, 92);
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: var(--color);
 }
 
-.caixa{
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: var(--color);
+}
+
+/*Home
+-------------------------------*/
+#home {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.caixa {
     padding-bottom: 20px;
     text-align: justify;
     margin-bottom: 20px;
 }
-.caixa p{
+
+.caixa p {
     padding-top: 20px;
 }
+
 /*Especialidades
 ---------------------------------*/
-.especify{
+.especify {
     font-size: 1.1em;
     line-height: 2em;
     padding: 40px;
     text-align: center;
 }
-.especialidades h2{
+
+.especify h2{
+    color: var(--cor-secundaria);
+}
+
+.espec h4{
+    color: var(--cor-secundaria);
+}
+
+.especialidades h2 {
     font-size: 2.9em;
     font-weight: bold;
     padding-top: 20px;
-   color: #8f5d2d;
+    color: var(--cor-secundaria);
 }
-.especialidades h4{
+
+.especialidades h4 {
     font-weight: bold;
-   color: #8f5d2d;
-   text-transform: uppercase;
+    color: var(--cor-secundaria);
+    text-transform: uppercase;
 }
-.painel{
-    background-color: #fff;
+
+.painel {
+    background-color: var(--color);
     text-align: center;
     margin-bottom: 20px;
     margin-top: 10px;
     text-align: center;
     padding: 20px 10px;
-    border: 3px solid #5b311e;
+    border: 3px solid var(--cor-alternativa);
     border-radius: 20px;
 }
-.painel img{
+
+.painel img {
     margin-bottom: 20px;
     border-radius: 20px;
     width: 400px;
     height: 400px;
 }
 
+.painel h4{
+    color: var(--cor-secundaria);
+}
+
 /*Atendimentos
 ---------------------------*/
-.consulta{
+.consulta {
     text-align: justify;
 }
 
-.atendimento{
+.atendimento {
     padding-bottom: 50px;
     text-align: center;
-    background-color: #ffebcd 
+    background-color: var(--cor-secundaria)
 }
-.atendimento h2{
-    color: #8f5d2d ;
+
+.atendimento h2 {
+    color: var(--cor-principal);
     padding-top: 30px;
     font-weight: bold;
 }
-.atendimento h4{
-    color: #8f5d2d;
+
+.atendimento h4 {
+    color: var(--cor-principal);
+}
+
+.atendimento p{
+    color: var(--cor-principal);
 }
 
 /*Depoimentos
 -----------------------*/
 
-.depoimentos h2, h4{
-    color: #8f5d2d;
+.depoimentos h2,
+h4 {
+    color: var(--cor-secundaria);
 }
 
-#carousel-dp{
+#carousel-dp {
     justify-content: center;
     text-align: center;
 }
-.carousel-control-next, .carousel-control-prev{
+
+.carousel-control-next,
+.carousel-control-prev {
     margin: 20px;
 }
-.carousel-control-prev{
+
+.carousel-control-prev {
     left: -100px;
 }
-.carousel-control-next{
+
+.carousel-control-next {
     right: -100px;
 }
-.depoimentos .container{
+
+.depoimentos .container {
     max-width: 700px;
     margin: auto;
     padding: 0 20px;
 }
+
 /*Agende
 --------------------*/
-#agende{
+#agende {
     padding-top: 20px;
     background-size: 50%;
-    background-attachment:fixed;  
-    background-color: #ffebcd;
-    color: #8f5d2d ;
+    background-attachment: fixed;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
     font-weight: bold;
 }
-#agende div{
+
+#agende div {
     margin-top: 30px;
 }
-#agende h4{
-    color: #8f5d2d;
+
+#agende h4 {
+    color: var(--cor-principal);
     font-weight: bold;
     padding-top: 60px;
 }
-#agendec{
-    background-color: #ffebcd;
-    color: #af7a48;
+
+#agendec {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
     font-weight: bold;
 }
-#agendec div{
+
+#agendec div {
     margin-top: 30px;
 }
-#agendec h2,h4{
-    color: #af7a48;    
+
+#agendec h2,
+h4 {
+    color: var(--cor-principal);
     padding-top: 60px;
 }
-.icon-container{
+
+#agendec p{
+    color: var(--cor-principal);
+}
+
+.icon-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 /*footer
 -----------------------*/
-footer{
-    background-color: #5b311e;
-}
-footer h4{
-    margin-top: 20px;
-    color: #fff;
+footer {
+    background-color: var(--cor-alternativa);
 }
 
-footer img{
+footer h4 {
+    margin-top: 20px;
+    color: var(--color);
+}
+
+footer img {
     margin-top: 20px;
 }
 
-footer ul{
+footer ul {
     list-style: none;
 }
-footer ul li{
+
+footer ul li {
     float: left;
     margin: 0 5px;
 }
@@ -226,84 +292,92 @@ footer ul li{
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    p{
+    p {
         font-size: 1.1em;
     }
 
-    #home{
+    #home {
         padding-top: 20px;
         margin-top: 100px;
     }
-    .painel{
-       font-size: 0.9em;
+
+    .painel {
+        font-size: 0.9em;
     }
-    .painel img{
+
+    .painel img {
         width: 350px;
         height: 300px;
     }
-    .atendimento h{
-       margin-left: 40px;
+
+    .atendimento h {
+        margin-left: 40px;
     }
 }
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    p{
+@media (min-width: 576px) and (max-width: 767.98px) {
+    p {
         font-size: 1.1em;
     }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .depoimentos{
+    .depoimentos {
         padding-right: 40px;
     }
-    .depoimentos img#img{
+
+    .depoimentos img#img {
         padding-top: 100px;
         padding-right: 50px;
         margin-top: 20px;
         width: 450px;
     }
-    p{
+
+    p {
         font-size: 1.1em;
     }
-    .painel{
+
+    .painel {
         width: 350px;
         height: 800px;
         font-size: 0.9em;
-     }
-     .painel img{
-         width: 300px;
-         height: 250px;
-     }
-     #agendec{
+    }
+
+    .painel img {
+        width: 300px;
+        height: 250px;
+    }
+
+    #agendec {
         background: url(../img/renata-nobg.png) center no-repeat;
         background-size: 70%;
-        background-attachment:fixed; 
-        background-color: #ffebcd;
-        color: #af7a48;
+        background-attachment: fixed;
+        background-color: var(--cor-secundaria);
+        color: var(--cor-reserva);
         font-weight: bold;
-     }
- }
+    }
+}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    #agendec{
-        background-color: #ffebcd;
-        color: #af7a48;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #agendec {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-reserva);
         font-weight: bold;
-     }
- }
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    #agendec{
+@media (min-width: 1200px) {
+    #agendec {
         background: url(../img/renata-nobg.png) center no-repeat;
         background-size: 40%;
-        background-attachment:fixed;
-        background-color: #ffebcd;
-        color: #af7a48;
-        font-weight: bold; 
-     }
- }
+        background-attachment: fixed;
+        background-color: var(--cor-secundaria);
+        color: var(--cor-reserva);
+        font-weight: bold;
+    }
+}
